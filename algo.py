@@ -110,8 +110,6 @@ traded_watchlist = []
 pd.set_option('display.max_rows', None)
 
 while True:
-     time.sleep(10)
-
      # ---- time preferences ----
      current_time = datetime.datetime.now().time()
      if current_time < datetime.time(9, 30):
@@ -124,6 +122,8 @@ while True:
           print("Market is over, Bye Bye see you tomorrow", current_time)
           time.sleep(3600)
           break
+
+     time.sleep(10)
 
      # ---- loop for each stock ----
      for stock_name in watchlist:
@@ -173,3 +173,4 @@ while True:
             print("Bought", qty, "quantity of", stock_name, "with Avg price:", buy_price, ",Target:", target, ",Stop loss:", stop_loss)
             traded_watchlist.append(stock_name)
             print("Traded stocks:", traded_watchlist)
+
