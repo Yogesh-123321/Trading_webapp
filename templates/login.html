@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-center justify-center h-screen bg-gray-900">
+    <form method="POST" class="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-sm">
+        <h2 class="text-2xl font-bold mb-4 text-white">Login</h2>
+        <input type="text" name="username" placeholder="Username"
+            class="border border-gray-600 bg-gray-700 text-white p-2 w-full mb-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required>
+        <input type="password" name="password" placeholder="Password"
+            class="border border-gray-600 bg-gray-700 text-white p-2 w-full mb-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required>
+        <button
+            class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded w-full transition duration-200 ease-in-out">Login</button>
+    </form>
+</body>
+
+</html>
